@@ -1,0 +1,206 @@
+html {
+  font-size: 1em;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url("../images/cerati.jpg");
+  position: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+.layer {
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+.card {
+  position: relative;
+  background: transparent url("../images/cerati.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 75vh;
+  width: 50vw;
+  top: 15%;
+  left: 15%;
+}
+.box {
+  height: 350px;
+  width: 400px;
+  background: #fff;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+}
+.box__content {
+  margin-top: 20px;
+  left: 30px;
+}
+.box__title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #353539;
+  display: inline-block;
+}
+.box__caption {
+  color: #ced0d2;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.box__caption span {
+  display: block;
+}
+.box__counter {
+  margin-top: 30px;
+}
+.box__counter--days,
+.box__counter--hours,
+.box__counter--minutes {
+  color: #ced0d2;
+  display: inline-block;
+  margin-right: 25px;
+}
+.box__counter--days {
+  color: #353539;
+}
+.box__counter--info {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #ced0d2;
+  text-transform: uppercase;
+}
+.box__counter--number,
+.box__date {
+  border: solid 1px #ced0d2;
+  font-size: 20px;
+  padding: 15px 12px;
+  font-weight: 700;
+}
+.box__purchase a {
+  display: inline-block;
+  color: #fff;
+  background: #353539;
+  padding: 20px;
+  margin-top: 40px;
+  width: 210px;
+  text-align: center;
+  float: left;
+  text-decoration: none;
+}
+.box__date {
+  display: inline-block;
+  font-weight: 400;
+  color: #ced0d2;
+  margin-top: 40px;
+  margin-left: 30px;
+  padding: 7px 10px;
+}
+.box__date--day {
+  margin-top: 10px;
+  font-size: 25px;
+  display: block;
+  line-height: 0.25;
+}
+.box__date--month {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+@media (min-width: 0) and (max-width: 767px) and (orientation: portrait) {
+  .card {
+    height: 35vh;
+    width: 100vw;
+    top: 45%;
+    left: 0%;
+    background-position: top;
+  }
+  .box {
+    height: 35%;
+    width: 100%;
+    left: 0%;
+    top: 10%;
+    padding: 0px;
+    box-shadow: 10px 0 50px 15px rgba(53,53,57,0.75);
+  }
+  .box__content {
+    left: 16.66666667%;
+  }
+  .box__title {
+    font-size: 30px;
+  }
+  .box__caption {
+    font-size: 10px;
+  }
+  .box__counter {
+    margin-top: 25px;
+  }
+  .box__counter--days,
+  .box__counter--hours,
+  .box__counter--minutes {
+    margin-right: 15px;
+  }
+  .box__counter--number {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+  .box__counter--info {
+    font-size: 10px;
+  }
+  .box__purchase a {
+    padding: 12px;
+    margin-top: 15px;
+    width: 135px;
+    font-size: 10px;
+  }
+  .box__date {
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 3px 5px 0px 5px;
+    text-align: center;
+  }
+  .box__date--day {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 0;
+  }
+  .box__date--month {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .card {
+    height: 50vh;
+    width: 60vw;
+    top: 30%;
+    left: 5%;
+  }
+  .box {
+    height: 350px;
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+  }
+}
+@media (min-width: 0) and (max-width: 768px) and (orientation: landscape) {
+  .card {
+    height: 70vh;
+    width: 60vw;
+    top: 15%;
+    left: 5%;
+  }
+  .box {
+    height: 50%;
+    width: 40%;
+    left: 50%;
+    top: 25%;
+  }
+}

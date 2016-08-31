@@ -1,0 +1,108 @@
+$tuna = #353539
+$iron = #ced0d2 
+$base = 1em
+
+html
+	font-size $base
+	
+body
+	font-family 'Open Sans', sans-serif;
+	background url('../images/cerati.jpg')
+	position fixed
+	background-position center center
+	background-size cover
+	background-attachment fixed
+	height 100vh
+	width 100vw
+
+.layer
+	background black
+	opacity 0.7
+	position absolute
+	height 100vh
+	width 100vw
+
+.card
+	position relative
+	background transparent url('../images/cerati.jpg')
+	background-repeat no-repeat
+	background-position center center
+	background-size cover
+	background-attachment fixed
+	height 75vh
+	width 50vw
+	top 15%
+	left 15%
+	
+.box
+	height 350px
+	width 400px
+	background white
+	position absolute
+	left 55%
+	top 40%
+	&__content
+		margin-top 20px
+		left 30px
+	&__title
+		font-size 50px
+		font-weight 700
+		color $tuna
+		display inline-block
+	&__caption
+		color $iron
+		display inline-block
+		margin-left 10px
+		font-weight 400
+		span
+			display block
+	&__counter
+		margin-top 30px
+		&--days
+		&--hours
+		&--minutes
+			color $iron
+			display inline-block
+			margin-right 25px
+		&--days
+			color $tuna
+		&--info
+			display block
+			margin-top 15px
+			text-align center
+			color $iron
+			text-transform uppercase
+		&--number
+			border solid 1px $iron
+			font-size 20px
+			padding 15px 12px
+			font-weight 700
+	&__purchase a
+		display inline-block
+		color white
+		background $tuna
+		padding 20px
+		margin-top 40px
+		width 210px
+		text-align center
+		float left
+		text-decoration none
+	&__date
+		display inline-block
+		@extends .box__counter--number
+		font-weight 400
+		color $iron
+		margin-top 40px
+		margin-left 30px
+		padding 7px 10px 
+		&--day
+			margin-top 10px
+			font-size 25px
+			display block
+			line-height 0.25
+		&--month 
+			font-size 12px
+			text-transform uppercase
+			
+
+@import '_media.styl'
