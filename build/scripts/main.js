@@ -50,8 +50,8 @@ function counterClock(){
 	document.getElementById("hour__position--one").innerHTML = hourPosOne;
 	document.getElementById("hour__position--two").innerHTML = hourPosTwo;
 
-	document.getElementById("minute__position--one").innerHTML = secondPosOne;
-	document.getElementById("minute__position--two").innerHTML = secondPosTwo;
+	document.getElementById("minute__position--one").innerHTML = minutePosOne;
+	document.getElementById("minute__position--two").innerHTML = minutePosTwo;
 }
 
 setInterval(counterClock, 1000);
