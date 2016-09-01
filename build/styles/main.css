@@ -37,6 +37,8 @@ body {
   position: absolute;
   left: 55%;
   top: 40%;
+  -webkit-animation: fadein 7s;
+          animation: fadein 7s;
 }
 .box__content {
   margin-top: 20px;
@@ -194,13 +196,76 @@ body {
   .card {
     height: 70vh;
     width: 60vw;
-    top: 15%;
+    top: 20%;
     left: 5%;
   }
   .box {
-    height: 50%;
-    width: 40%;
+    height: 180px;
+    width: 260px;
+    background: #fff;
+    position: absolute;
     left: 50%;
-    top: 25%;
+    top: 30%;
+  }
+  .box__content {
+    left: 8%;
+    margin-top: 10px;
+  }
+  .box__title {
+    font-size: 30px;
+  }
+  .box__caption {
+    font-size: 10px;
+  }
+  .box__counter {
+    margin-top: 15px;
+  }
+  .box__counter--days,
+  .box__counter--hours,
+  .box__counter--minutes {
+    margin-right: 10px;
+  }
+  .box__counter--number {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+  .box__counter--info {
+    font-size: 10px;
+  }
+  .box__purchase a {
+    padding: 12px;
+    margin-top: 15px;
+    width: 135px;
+    font-size: 10px;
+  }
+  .box__date {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 3px 5px 0px 5px;
+    text-align: center;
+  }
+  .box__date--day {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 0;
+  }
+  .box__date--month {
+    font-size: 10px;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
